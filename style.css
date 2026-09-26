@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(196, 162, 121);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #110606;
+
+}
+
+#outerDiv{
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0,0.3);
+
+}
+
+h1{
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+p{
+  color: #160e0e;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+/* FORM STYLING */
+#weatherForm{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#inputs{
+  border: 1px solid #939393;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  padding: 12px;
+}
+#inputs:focus{background-color: #e4e7b0;}
+
+#search{
+  border: 2px solid rgb(210, 202, 202);
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  background-color: #579be4;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#search:hover{
+  background-color: #287bd3;
+}
+
+/* TO HIDE UI STATE */
+
+.hidden{
+  display: none !important;
+}
+
+#loadingMsg{
+  color: #3f4144;
+  font-weight: 700;
+  margin: 15px 0;
+}
+#errorMsg{
+  background-color: #ffeaa7;
+  color: #d63031;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-weight: 500px;
+}
+
+/* WEATHER DISPLAY STYLING */
+#Display{
+  margin-top: 20px;
+}
+
+#cityName{
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+#cityDes{
+   margin-bottom: 15px;
+   color: #555;
+   text-transform: capitalize;
+}
+
+.tempDisplay{
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+/* DETAILS BLOCK LAYOUT */
+.details{
+  display: flex;
+  justify-content:space-around;
+  border-radius: 12px;
+  background-color: rgba(174, 168, 168, 0.6);
+  padding: 15px;
+}
+.humidity,.windSpeed{
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+
+.humidityLabel,.windSpeedLabel{
+  font-size: 0.98rem;
+  text-transform: uppercase;
+  color: #524d4d;
+}
+
+.humidityValue, .windSpeedValue{
+  font-size: 1.3rem;
+  font-weight: 600;
+}

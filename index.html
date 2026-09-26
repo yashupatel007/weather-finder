@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="weather.js" defer></script>
+  <title> App</title>
+</head>
+<body>
+
+  <div id="outerDiv">
+
+    <!--FORM-->
+
+    <form id="weatherForm">
+
+    <h1>Weather Finder</h1>
+    <p> Just Check Your City's Weather</p>
+
+    <input id="inputs" type="text" placeholder="e.g. DELHI" required >
+    <button id="search" type="submit">Search</button>
+
+    </form>
+
+    <!--UI STATE-->
+
+    <div id="loadingMsg" >Fetching Data....</div>
+    <div id="errorMsg"></div>
+
+    <!--WEATHER DATA DISPLAY-->
+
+    <div id="Display">
+      <!--BASIC DEATAILS-->
+      <h2 id="cityName">City Name</h2>
+      <p id="cityDes">Description</p>
+
+      <!--TEMPERATURE DEATAILS -->
+      <div class="tempDisplay">
+        <span>0</span>°C
+      </div>
+
+      <!-- DEATAIL BLOCK-->
+      <div class="details">
+
+        <!--HUMIDITY BLOCK-->
+        <div class="humidity">
+          <span class="humidityLabel">Humidity</span>
+          <span class="humidityValue">0%</span>
+        </div>
+
+        <!--WINDSPEED BLOCK-->
+        <div class="windSpeed">
+          <span class="windSpeedLabel">Wind Speed</span>
+          <span class="windSpeedValue">0 km/h</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
